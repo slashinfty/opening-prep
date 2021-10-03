@@ -1,0 +1,23 @@
+{
+  "name": "opening-prep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slashinfty/opening-prep.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slashinfty/opening-prep/issues"
+  },
+  "homepage": "https://github.com/slashinfty/opening-prep#readme",
+  "dependencies": {
+    "chess.js": "^0.12.0",
+    "readline-sync": "^1.4.10"
+  }
+}
