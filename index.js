@@ -126,7 +126,8 @@ const game = () => {
     chess = new Chess();
     if (Math.random() < 0.5) chess.move(returnMove(chess.fen()));
     do {
-        console.log(printMoves(chess.history()), '\n', chess.ascii());
+        console.log(printMoves(chess.history()));
+        console.log(chess.ascii());
         const userMove = rl.question('Move: ');
         const valid = chess.move(userMove);
         if (valid === null) {
@@ -137,6 +138,8 @@ const game = () => {
         const oppMove = returnMove(chess.fen());
         if (oppMove === true) {
             console.log('Correct!');
+            console.log(printMoves(chess.history()));
+            console.log(chess.ascii());
             active = false;
         } else if (oppMove === false) {
             console.log('Incorrect.');
