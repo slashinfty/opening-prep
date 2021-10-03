@@ -111,9 +111,7 @@ const ends = [
 const returnMove = fen => {
     const convertedFen = fen.replace(/[\w]+(?=\s\d+\s\d+$)/, '-');
     const foundPosition = moves[convertedFen];
-    if (foundPosition === undefined) {
-        return ends.includes(convertedFen) ? true : false;
-    }
+    if (foundPosition === undefined) return ends.includes(convertedFen) ? true : false;
     return typeof foundPosition === 'string' ? foundPosition : foundPosition[Math.floor(Math.random() * (foundPosition.length))];
 }
 
